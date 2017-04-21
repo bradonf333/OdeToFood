@@ -17,7 +17,24 @@ namespace OdeToFood
         public IConfiguration Configuration { get; set; }
 
         /// <summary>
-        /// Constructor used to read the configuration settings and get the settings within it
+        /// Constructor used to build different parts of the config
+        /// 
+        /// The IHostingEnvrionment object env can tell what environment we are in, prod or dev.
+        /// 
+        /// AddJsonFile is a method used to add whatever json file you have set up with your configuration
+        /// settings in it.
+        ///     - Can have a connection string or other settings here.
+        /// 
+        /// AddEnvironmentVariables is not currently being used. 
+        ///     -This is something that can be used if you ever want to override the
+        ///      config.json variables.
+        ///     -This is the value from the properties. if you right click the project and
+        ///      go to properties you can set Environment Variables
+        ///
+        /// NuGet Dependencies:
+        /// Microsoft.Extensions.Configuration.FileExtensions
+        /// Microsoft.Extensions.Configuration.Json
+        /// 
         /// </summary>
         public Startup(IHostingEnvironment env)
         {

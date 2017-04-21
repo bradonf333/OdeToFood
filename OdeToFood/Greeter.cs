@@ -11,8 +11,11 @@ namespace OdeToFood
         string GetGreeting();
     }
 
-    public class Greeter
+    public class Greeter : IGreeter
     {
-        
+        public string GetGreeting()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

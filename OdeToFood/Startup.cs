@@ -13,6 +13,9 @@ namespace OdeToFood
 {
     public class Startup
     {
+        // Property to hold the Configuration information 
+        public IConfiguration Configuration { get; set; }
+
         /// <summary>
         /// Constructor used to read the configuration settings and get the settings within it
         /// </summary>
@@ -26,9 +29,7 @@ namespace OdeToFood
 
             // Have the builder build itself
             builder.Build();
-        }
-
-        public IConfiguration Configuration { get; set; }
+        }        
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940

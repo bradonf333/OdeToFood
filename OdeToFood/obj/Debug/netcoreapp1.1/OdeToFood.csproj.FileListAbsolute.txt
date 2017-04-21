@@ -1,0 +1,6 @@
+C:\Sites\OdeToFood\OdeToFood\bin\Debug\netcoreapp1.1\OdeToFood.deps.json
+C:\Sites\OdeToFood\OdeToFood\bin\Debug\netcoreapp1.1\OdeToFood.runtimeconfig.json
+C:\Sites\OdeToFood\OdeToFood\bin\Debug\netcoreapp1.1\OdeToFood.runtimeconfig.dev.json
+C:\Sites\OdeToFood\OdeToFood\bin\Debug\netcoreapp1.1\OdeToFood.dll
+C:\Sites\OdeToFood\OdeToFood\obj\Debug\netcoreapp1.1\OdeToFood.csprojResolveAssemblyReference.cache
+C:\Sites\OdeToFood\OdeToFood\obj\Debug\netcoreapp1.1\OdeToFood.AssemblyInfo.cs

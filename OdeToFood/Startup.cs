@@ -16,7 +16,7 @@ namespace OdeToFood
         /// <summary>
         /// Constructor used to read the configuration settings and get the settings within it
         /// </summary>
-        public Startup()
+        public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath()

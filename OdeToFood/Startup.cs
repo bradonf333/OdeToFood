@@ -71,7 +71,7 @@ namespace OdeToFood
             app.Run(async (context) =>
             {
                 // Set the text on the web page to equal our text in the json settings
-                var message = Configuration["Greeting"];
+                var message = greeter.GetGreeting();
                 await context.Response.WriteAsync(message);
             });
         }

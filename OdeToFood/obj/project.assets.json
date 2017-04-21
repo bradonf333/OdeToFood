@@ -8741,10 +8741,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sites\\OdeToFood\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+      "projectUniqueName": "C:\\Sites\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
       "projectName": "OdeToFood",
-      "projectPath": "C:\\Sites\\OdeToFood\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
-      "outputPath": "C:\\Sites\\OdeToFood\\OdeToFood\\OdeToFood\\obj\\",
+      "projectPath": "C:\\Sites\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+      "outputPath": "C:\\Sites\\OdeToFood\\OdeToFood\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

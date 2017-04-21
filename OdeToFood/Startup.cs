@@ -13,6 +13,9 @@ namespace OdeToFood
 {
     public class Startup
     {
+        /// <summary>
+        /// Constructor used to read the configuration settings and get the settings within it
+        /// </summary>
         public Startup()
         {
             var builder = new ConfigurationBuilder();

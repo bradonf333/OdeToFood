@@ -25,6 +25,7 @@
         "dependencies": {
           "Microsoft.ApplicationInsights.AspNetCore": "2.0.0",
           "Microsoft.AspNetCore": "1.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "1.1.1",
           "Microsoft.NETCore.App": "1.1.1"
         },
         "runtime": {

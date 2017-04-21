@@ -18,7 +18,8 @@ namespace OdeToFood
         /// </summary>
         public Startup()
         {
-            var builder = new ConfigurationBuilder();
+            var builder = new ConfigurationBuilder()
+                .SetBasePath()
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.

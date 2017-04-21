@@ -27,7 +27,7 @@ namespace OdeToFood
                 .AddJsonFile("appsettings.json")
                 .AddEnvironmentVariables();
 
-            // Have the builder build itself
+            // Have the builder build itself and assign to the Configuration property
             Configuration = builder.Build();
         }        
 

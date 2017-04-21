@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace OdeToFood
 {
+    public interface IGreeter
+    {
+
+    }
+
     public class Greeter
     {
         

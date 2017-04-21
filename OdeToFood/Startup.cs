@@ -18,13 +18,17 @@ namespace OdeToFood
         /// </summary>
         public Startup(IHostingEnvironment env)
         {
+            // Set up the configuration sources
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json")
                 .AddEnvironmentVariables();
 
+            // Have the builder build itself
             builder.Build();
         }
+
+        public IConfiguration Configuration { get; set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940

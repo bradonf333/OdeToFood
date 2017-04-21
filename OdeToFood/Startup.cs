@@ -20,6 +20,7 @@ namespace OdeToFood
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json")
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.

@@ -15,7 +15,7 @@ namespace OdeToFood
     {
         public string GetGreeting()
         {
-            throw new NotImplementedException();
+            return "Hello from the Greeter!";
         }
     }
 }

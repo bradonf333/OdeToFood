@@ -108,21 +108,6 @@
           "NETStandard.Library": "1.6.1"
         }
       },
-      "Microsoft.AspNetCore.Authorization/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "1.1.1",
-          "Microsoft.Extensions.Options": "1.1.1",
-          "NETStandard.Library": "1.6.1",
-          "System.Security.Claims": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.Authorization.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.Authorization.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Diagnostics/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -297,59 +282,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.AspNetCore.HttpOverrides.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc.Abstractions/1.1.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Routing.Abstractions": "1.1.1",
-          "Microsoft.CSharp": "4.3.0",
-          "Microsoft.Net.Http.Headers": "1.1.1",
-          "NETStandard.Library": "1.6.1",
-          "System.ComponentModel.TypeConverter": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.Mvc.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.Mvc.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.Mvc.Core/1.1.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "1.1.1",
-          "Microsoft.AspNetCore.Hosting.Abstractions": "1.1.1",
-          "Microsoft.AspNetCore.Http": "1.1.1",
-          "Microsoft.AspNetCore.Mvc.Abstractions": "1.1.2",
-          "Microsoft.AspNetCore.ResponseCaching.Abstractions": "1.1.1",
-          "Microsoft.AspNetCore.Routing": "1.1.1",
-          "Microsoft.Extensions.DependencyModel": "1.1.1",
-          "Microsoft.Extensions.FileProviders.Abstractions": "1.1.0",
-          "Microsoft.Extensions.Logging.Abstractions": "1.1.1",
-          "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
-          "NETStandard.Library": "1.6.1",
-          "System.Buffers": "4.3.0",
-          "System.Diagnostics.DiagnosticSource": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.Core.dll": {}
-        }
-      },
-      "Microsoft.AspNetCore.ResponseCaching.Abstractions/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "1.1.0",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {}
         }
       },
       "Microsoft.AspNetCore.Routing/1.1.1": {
@@ -573,25 +505,6 @@
           }
         }
       },
-      "Microsoft.DotNet.PlatformAbstractions/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "System.AppContext": "4.1.0",
-          "System.Collections": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.IO.FileSystem": "4.0.1",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
-        },
-        "compile": {
-          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
-        }
-      },
       "Microsoft.Extensions.Configuration/1.1.1": {
         "type": "package",
         "dependencies": {
@@ -701,22 +614,6 @@
         },
         "runtime": {
           "lib/netstandard1.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.Extensions.DependencyModel/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.DotNet.PlatformAbstractions": "1.1.1",
-          "Newtonsoft.Json": "9.0.1",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Dynamic.Runtime": "4.0.11",
-          "System.Linq": "4.1.0"
-        },
-        "compile": {
-          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll": {}
         }
       },
       "Microsoft.Extensions.DiagnosticAdapter/1.0.0": {
@@ -3228,19 +3125,6 @@
         "microsoft.aspnetcore.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Authorization/1.1.1": {
-      "sha512": "XBc15yM/Hccqw2m3Ff2pmM5Y3xkjPIcuPCA+Tl3LaKJyP7nsfqG6Vou4yd9g4VLX0MCpI/XGjfsWtGxAjvyZFg==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.authorization/1.1.1",
-      "files": [
-        "lib/net451/Microsoft.AspNetCore.Authorization.dll",
-        "lib/net451/Microsoft.AspNetCore.Authorization.xml",
-        "lib/netstandard1.3/Microsoft.AspNetCore.Authorization.dll",
-        "lib/netstandard1.3/Microsoft.AspNetCore.Authorization.xml",
-        "microsoft.aspnetcore.authorization.1.1.1.nupkg.sha512",
-        "microsoft.aspnetcore.authorization.nuspec"
-      ]
-    },
     "Microsoft.AspNetCore.Diagnostics/1.1.1": {
       "sha512": "llE2R21O81uaeX5r3SGc0sQOgtwFRrGXGru5vtaHkk2QyxE4FpWaG1nQUPpcstejOmuzzbp2FDHesdAsfyP1zA==",
       "type": "package",
@@ -3369,45 +3253,6 @@
         "lib/netstandard1.3/Microsoft.AspNetCore.HttpOverrides.xml",
         "microsoft.aspnetcore.httpoverrides.1.1.1.nupkg.sha512",
         "microsoft.aspnetcore.httpoverrides.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Mvc.Abstractions/1.1.2": {
-      "sha512": "EEugBQlRBEiOM4wr1MgEJJoF3NfdE7ROx+nELNbRnwu+6ANsC6Lf2Sz06gSO0lJn5SsHzyBwzggOMt1f1NjK8w==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc.abstractions/1.1.2",
-      "files": [
-        "lib/net451/Microsoft.AspNetCore.Mvc.Abstractions.dll",
-        "lib/net451/Microsoft.AspNetCore.Mvc.Abstractions.xml",
-        "lib/netstandard1.3/Microsoft.AspNetCore.Mvc.Abstractions.dll",
-        "lib/netstandard1.3/Microsoft.AspNetCore.Mvc.Abstractions.xml",
-        "microsoft.aspnetcore.mvc.abstractions.1.1.2.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.Mvc.Core/1.1.2": {
-      "sha512": "6fitq/wE28XJogm3rEPYR03Kq9Wsx90z86I/lREOOlbZT4ZAG7KLMAczzukM4B5JsI3MWYGIOpzHTdqsyjuR1A==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.mvc.core/1.1.2",
-      "files": [
-        "lib/net451/Microsoft.AspNetCore.Mvc.Core.dll",
-        "lib/net451/Microsoft.AspNetCore.Mvc.Core.xml",
-        "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.Core.dll",
-        "lib/netstandard1.6/Microsoft.AspNetCore.Mvc.Core.xml",
-        "microsoft.aspnetcore.mvc.core.1.1.2.nupkg.sha512",
-        "microsoft.aspnetcore.mvc.core.nuspec"
-      ]
-    },
-    "Microsoft.AspNetCore.ResponseCaching.Abstractions/1.1.1": {
-      "sha512": "QUXpMzV8w+Vp/XNkJCHlSV8BRReoP+rGurElGbxZzN62Mkacper03g2n6ugATuzmS+Ep9Iv1abkly5BleKzdEg==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.responsecaching.abstractions/1.1.1",
-      "files": [
-        "lib/net451/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
-        "lib/net451/Microsoft.AspNetCore.ResponseCaching.Abstractions.xml",
-        "lib/netstandard1.3/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
-        "lib/netstandard1.3/Microsoft.AspNetCore.ResponseCaching.Abstractions.xml",
-        "microsoft.aspnetcore.responsecaching.abstractions.1.1.1.nupkg.sha512",
-        "microsoft.aspnetcore.responsecaching.abstractions.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Routing/1.1.1": {
@@ -3612,17 +3457,6 @@
         "runtimes/win8-arm/native/Microsoft.DiaSymReader.Native.arm.dll"
       ]
     },
-    "Microsoft.DotNet.PlatformAbstractions/1.1.1": {
-      "sha512": "wCTvQtbDJFfB8m9C36HX4YOKdNPM1s5I28MeFhfjJeg8cJ/Y/U1JLXrr3vk+nLWPAu2+8FE3D9IeKmWkEjbFKA==",
-      "type": "package",
-      "path": "microsoft.dotnet.platformabstractions/1.1.1",
-      "files": [
-        "lib/net451/Microsoft.DotNet.PlatformAbstractions.dll",
-        "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll",
-        "microsoft.dotnet.platformabstractions.1.1.1.nupkg.sha512",
-        "microsoft.dotnet.platformabstractions.nuspec"
-      ]
-    },
     "Microsoft.Extensions.Configuration/1.1.1": {
       "sha512": "UFOn6PBUAmikEB+aE3MSBrPtM0MMYG+29epen44lhyaC1N/5XxTQ/IrvHuXElFGVW6/iCdXGi6FnpPCWZblG4A==",
       "type": "package",
@@ -3715,18 +3549,6 @@
         "lib/netstandard1.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.1.1.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.DependencyModel/1.1.1": {
-      "sha512": "OeFa9utuY/rZPcDm8l+PpgSWRlPVMj6AivDbSJSnd/p5st4pQVUr94uC5KnoB8uwme2v/q2RIpwoi8wk597VjQ==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencymodel/1.1.1",
-      "files": [
-        "lib/net451/Microsoft.Extensions.DependencyModel.dll",
-        "lib/netstandard1.3/Microsoft.Extensions.DependencyModel.dll",
-        "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll",
-        "microsoft.extensions.dependencymodel.1.1.1.nupkg.sha512",
-        "microsoft.extensions.dependencymodel.nuspec"
       ]
     },
     "Microsoft.Extensions.DiagnosticAdapter/1.0.0": {
@@ -8910,10 +8732,6 @@
     ".NETCoreApp,Version=v1.1": [
       "Microsoft.ApplicationInsights.AspNetCore >= 2.0.0",
       "Microsoft.AspNetCore >= 1.1.1",
-      "Microsoft.AspNetCore.Http >= 1.1.1",
-      "Microsoft.AspNetCore.Http.Abstractions >= 1.1.1",
-      "Microsoft.AspNetCore.Mvc.Core >= 1.1.2",
-      "Microsoft.AspNetCore.Routing.Abstractions >= 1.1.1",
       "Microsoft.NETCore.App >= 1.1.1"
     ]
   },
@@ -8940,19 +8758,7 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.Routing.Abstractions": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
           "Microsoft.AspNetCore": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
-          "Microsoft.AspNetCore.Mvc.Core": {
-            "target": "Package",
-            "version": "1.1.2"
-          },
-          "Microsoft.AspNetCore.Http": {
             "target": "Package",
             "version": "1.1.1"
           },
@@ -8964,10 +8770,6 @@
           "Microsoft.ApplicationInsights.AspNetCore": {
             "target": "Package",
             "version": "2.0.0"
-          },
-          "Microsoft.AspNetCore.Http.Abstractions": {
-            "target": "Package",
-            "version": "1.1.1"
           }
         }
       }

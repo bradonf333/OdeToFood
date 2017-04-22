@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,10 @@ namespace OdeToFood
 
     public class Greeter : IGreeter
     {
+        public Greeter(IConfiguration configuration)
+        {
+
+        }
         public string GetGreeting()
         {
             return "Hello from the Greeter!";

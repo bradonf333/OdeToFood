@@ -76,8 +76,10 @@ namespace OdeToFood
 
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage(); 
             }
+
+            app.UseWelcomePage();
 
             app.Run(async (context) =>
             {

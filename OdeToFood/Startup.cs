@@ -79,6 +79,9 @@ namespace OdeToFood
                 app.UseDeveloperExceptionPage(); 
             }
 
+            // Looks at an incoming request and see if there is a default file that will match that request
+            app.UseDefaultFiles();
+
             // Looks for files within the wwwroot folder
             app.UseStaticFiles();
 

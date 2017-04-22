@@ -78,7 +78,10 @@ namespace OdeToFood
             {
                 app.UseDeveloperExceptionPage(); 
             }
-            
+
+            // Looks for files within the wwwroot folder
+            app.UseStaticFiles();
+
             app.UseWelcomePage(new WelcomePageOptions
             {
                 Path = "/welcome"

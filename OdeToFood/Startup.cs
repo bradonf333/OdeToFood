@@ -52,9 +52,13 @@ namespace OdeToFood
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            // IGreeter now implements IConfiguration. Since that was created in this class 
-            // we need to register it as a service here. Use the Configuration property
-            // we created above from the IConfiguration.
+            /* IGreeter now implements IConfiguration. Since that was created in this class we need to
+             * register it as a service here. Use the Configuration property we created above from the IConfiguration.
+             * 
+             * Now whenever Configure is called it will see it needs an IGreeter object.
+             * It will then look at that IGreeter class and see that it takes an IConfiguration object,
+             * which is now set up here.
+             */ 
             services.AddSingleton(Configuration);
 
             // Whenever something needs an IGreeter instantiate this class and pass it in

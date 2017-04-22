@@ -22,7 +22,7 @@ namespace OdeToFood
         }
         public string GetGreeting()
         {
-            return _greeting;
+            return "Hello from the Greeter!";
         }
     }
 }

@@ -78,7 +78,7 @@ namespace OdeToFood
             {
                 app.UseDeveloperExceptionPage(); 
             }
-
+            
             app.UseWelcomePage(new WelcomePageOptions
             {
                 Path = "/welcome"

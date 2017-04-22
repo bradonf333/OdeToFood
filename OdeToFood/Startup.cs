@@ -79,7 +79,7 @@ namespace OdeToFood
                 app.UseDeveloperExceptionPage(); 
             }
 
-            app.UseWelcomePage();
+            app.UseWelcomePage("/welcome");
 
             app.Run(async (context) =>
             {

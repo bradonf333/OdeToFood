@@ -61,6 +61,9 @@ namespace OdeToFood
              */ 
             services.AddSingleton(Configuration);
 
+            // Adds the MVC Service
+            services.AddMvc();
+
             // Whenever something needs an IGreeter instantiate this class and pass it in
             services.AddSingleton<IGreeter, Greeter>();
         }

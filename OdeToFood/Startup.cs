@@ -91,9 +91,18 @@ namespace OdeToFood
             app.UseMvc(ConfigureRoutes);
         }
 
-        private void ConfigureRoutes(IRouteBuilder obj)
+        /// <summary>
+        /// This method will configure the routes for the MVC.
+        /// </summary>
+        /// <param name="routeBuilder"></param>
+        private void ConfigureRoutes(IRouteBuilder routeBuilder)
         {
-            throw new NotImplementedException();
+            /* 
+             * First param is a name of the route
+             * Second param is the template for the route
+             * 
+             */ 
+            routeBuilder.MapRoute("Default", "{controller}/{action}/{id?}");
         }
     }
 }

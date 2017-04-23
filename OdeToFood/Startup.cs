@@ -102,7 +102,7 @@ namespace OdeToFood
              * Second param is the template for the route
              * 
              */ 
-            routeBuilder.MapRoute("Default", "{controller}/{action}/{id?}");
+            routeBuilder.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
         }
     }
 }

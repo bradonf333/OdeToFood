@@ -82,7 +82,9 @@ namespace OdeToFood
             // Combines both the UseDefaultFiles and the UseStaticFiles
             app.UseFileServer();
 
-            
+            // MVC takes an http request and tries to map it a method on a C# class.
+            // Instantiate a class, invoke a method and that method will tell MVC Framework what to do.
+            app.UseMvcWithDefaultRoute();
         }
     }
 }

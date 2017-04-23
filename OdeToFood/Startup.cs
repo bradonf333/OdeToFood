@@ -82,17 +82,7 @@ namespace OdeToFood
             // Combines both the UseDefaultFiles and the UseStaticFiles
             app.UseFileServer();
 
-            app.UseWelcomePage(new WelcomePageOptions
-            {
-                Path = "/welcome"
-            });
-
-            app.Run(async (context) =>
-            {
-                // Set the text on the web page to equal our text in the json settings
-                var message = greeter.GetGreeting();
-                await context.Response.WriteAsync(message);
-            });
+            
         }
     }
 }

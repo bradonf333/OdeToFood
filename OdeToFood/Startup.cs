@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Routing;
 
 namespace OdeToFood
 {
@@ -87,7 +88,12 @@ namespace OdeToFood
 
             // MVC takes an http request and tries to map it a method on a C# class.
             // Instantiate a class, invoke a method and that method will tell MVC Framework what to do.
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(ConfigureRoutes);
+        }
+
+        private void ConfigureRoutes(IRouteBuilder obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,5 +1,8 @@
 ﻿namespace OdeToFood.Models
 {
+    /// <summary>
+    /// Simple model of a Restaurant
+    /// </summary>
     public class Restaurant
     {
         public int Id { get; set; }

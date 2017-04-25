@@ -4,9 +4,9 @@ namespace OdeToFood.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "Hello, from the HomeController";
+            return Content("Hello, from the HomeController");
         }
     }
 }

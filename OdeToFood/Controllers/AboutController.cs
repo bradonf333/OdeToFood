@@ -11,6 +11,7 @@ namespace OdeToFood.Controllers
     /// Controller used as an about page
     /// </summary>
     
+    // Route tokens. Looks for the /controller/method url convention
     [Route("[controller]/[action]")]
     public class AboutController
     {

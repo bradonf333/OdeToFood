@@ -11,10 +11,10 @@ namespace OdeToFood.Controllers
     /// Controller used as an about page
     /// </summary>
     
-    [Route("about")]
+    [Route("[controller]")]
     public class AboutController
     {
-        [Route("")]
+        [Route("phone")]
         public string Phone()
         {
             return "888-888-8888";

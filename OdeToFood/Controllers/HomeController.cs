@@ -8,6 +8,10 @@ namespace OdeToFood.Controllers
     {
         private IRestaurantData _restaurantData;
 
+        /// <summary>
+        /// Constructor that will assign the IRestaurantData to a private variable
+        /// </summary>
+        /// <param name="restaurantData"></param>
         public HomeController(IRestaurantData restaurantData)
         {
             _restaurantData = restaurantData;

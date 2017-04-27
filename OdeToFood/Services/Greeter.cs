@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OdeToFood
+namespace OdeToFood.Services
 {
     public interface IGreeter
     {

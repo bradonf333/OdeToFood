@@ -20,7 +20,7 @@ namespace OdeToFood.Controllers
         public IActionResult Index()
         {
             // Instantiate a new Restaurant object and add populate with data
-            var model = new Restaurant { Id = 1, Name = "The House of Kobe" };
+            var model = _restaurantData.GetAll();
 
             return View(model);
         }

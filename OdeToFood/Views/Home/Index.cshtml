@@ -5,7 +5,21 @@
     <title>OdeToFood</title>
 </head>
 <body>
-    <h1>@Model.Name</h1>
-    <div>This is the home page</div>
+    <h1>Welcome!</h1>
+
+    <table>
+        @* 
+            Loop through all the restaurants in the model creating a new table row
+            for each one.
+        *@
+        @foreach (var restaurant in Model)
+        {
+            <tr>
+                <td>@restaurant.Id</td>
+                <td>@restaurant.Name</td>
+            </tr>
+        }
+    </table>
+
 </body>
 </html>

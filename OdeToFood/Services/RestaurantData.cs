@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace OdeToFood.Services
 {
-    public class InMemoryRestaurantData
+    public interface IRestaurantData
+    {
+
+    }
+
+    public class InMemoryRestaurantData : IRestaurantData
     {
         
     }

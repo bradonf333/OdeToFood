@@ -24,7 +24,7 @@ namespace OdeToFood.Controllers
             // Instantiate a new Restaurant object and add populate with data
             var model = new HomePageViewModel();
             model.Restaurants = _restaurantData.GetAll();
-            model.CurrentMessage = "";
+            model.CurrentMessage = _greeter.GetGreeting();
 
             return View(model);
         }

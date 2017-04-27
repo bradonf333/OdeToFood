@@ -20,6 +20,10 @@ namespace OdeToFood.Controllers
             _greeter = greeter;
         }
 
+        /// <summary>
+        /// Creates a model from the HomePageViewModel and assigns it the list of restaurants and the greeting string
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             // Instantiate a new Restaurant object and add populate with data

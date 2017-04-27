@@ -12,6 +12,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.1" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Services\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

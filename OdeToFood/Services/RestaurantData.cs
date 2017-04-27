@@ -15,12 +15,16 @@ namespace OdeToFood.Services
 
     public class InMemoryRestaurantData : IRestaurantData
     {
-        public IEnumerable<Restaurant> GetAll()
+        public InMemoryRestaurantData()
         {
-            public InMemoryRestaurantData ()
+            _restaurants = new List<Restaurant>
             {
 
-            }
+            };
+        }
+
+        public IEnumerable<Restaurant> GetAll()
+        {
         }
 
         // List to hold restaurants

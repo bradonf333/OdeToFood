@@ -17,7 +17,13 @@ namespace OdeToFood.Services
     {
         public IEnumerable<Restaurant> GetAll()
         {
-            throw new NotImplementedException();
+            public InMemoryRestaurantData ()
+            {
+
+            }
         }
+
+        // List to hold restaurants
+        List<Restaurant> _restaurants;
     }
 }

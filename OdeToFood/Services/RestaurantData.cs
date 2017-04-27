@@ -37,6 +37,7 @@ namespace OdeToFood.Services
 
         public IEnumerable<Restaurant> GetAll()
         {
+            return _restaurants;
         }
 
         // List to hold restaurants

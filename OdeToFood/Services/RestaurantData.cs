@@ -25,6 +25,10 @@ namespace OdeToFood.Services
 
     public class InMemoryRestaurantData : IRestaurantData
     {
+        /// <summary>
+        /// Constructor to create 3 Restaurants.
+        /// Simulate a database
+        /// </summary>
         public InMemoryRestaurantData()
         {
             _restaurants = new List<Restaurant>
@@ -35,6 +39,10 @@ namespace OdeToFood.Services
             };
         }
 
+        /// <summary>
+        /// Returns our private list of restaurants
+        /// </summary>
+        /// <returns>/returns>
         public IEnumerable<Restaurant> GetAll()
         {
             return _restaurants;

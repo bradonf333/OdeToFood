@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OdeToFood.Models;
 using OdeToFood.Services;
+using OdeToFood.ViewModels;
 
 namespace OdeToFood.Controllers
 {
@@ -20,7 +20,7 @@ namespace OdeToFood.Controllers
         public IActionResult Index()
         {
             // Instantiate a new Restaurant object and add populate with data
-            var model = _restaurantData.GetAll();
+            var model = new HomePageViewModel();
 
             return View(model);
         }

@@ -17,6 +17,9 @@ namespace OdeToFood.Services
     {
         // Method to enumerate all restaurants
         IEnumerable<Restaurant> GetAll();
+
+        // Method that will return only 1 restaurant
+        Restaurant Get(int id);
     }
 
     public class InMemoryRestaurantData : IRestaurantData

@@ -34,7 +34,7 @@ namespace OdeToFood.Controllers
             return View(model);
         }
 
-        public string Details(int id)
+        public IActionResult Details(int id)
         {
             return id.ToString();
         }

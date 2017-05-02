@@ -1,5 +1,7 @@
 ﻿using OdeToFood.Entities;
 using System.Collections.Generic;
+using System;
+using System.Linq;
 
 namespace OdeToFood.Services
 {
@@ -45,6 +47,17 @@ namespace OdeToFood.Services
         public IEnumerable<Restaurant> GetAll()
         {
             return _restaurants;
+        }
+
+        /// <summary>
+        /// Return a restaurant object by using a Linq query.
+        /// Find the restaurant by the id that was passed in as a param
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Restaurant Get(int id)
+        {
+            return _restaurants.FirstOrDefault(r => r.Id == id);
         }
 
         // List to hold restaurants

@@ -34,9 +34,20 @@ namespace OdeToFood.Controllers
             return View(model);
         }
 
+        /// <summary>
+        /// Gives the details of 1 specific resaurant.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public IActionResult Details(int id)
         {
             var model = _restaurantData.Get(id);
+
+            // Handle null ids. Redirect to our index page
+            if (model == null)
+            {
+                return RedirectToAction("Index");
+            }
 
             return View(model);
         }

@@ -51,5 +51,14 @@ namespace OdeToFood.Controllers
 
             return View(model);
         }
+
+        /// <summary>
+        /// Create a new restaurant
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }

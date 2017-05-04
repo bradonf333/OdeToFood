@@ -1,5 +1,14 @@
 ﻿namespace OdeToFood.Entities
 {
+    public enum CuisineType
+    {
+         None,
+         Italian,
+         French,
+         Japanese,
+         American
+    }
+
     /// <summary>
     /// Simple model of a Restaurant
     /// </summary>

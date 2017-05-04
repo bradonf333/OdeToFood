@@ -8,7 +8,9 @@
         @* Html form helper. Opens and closes form *@
         @using (Html.BeginForm())
         {
-            @Html.TextBoxFor(m => m.Name)
+            <div>
+                @Html.TextBoxFor(m => m.Name)
+            </div>
         }
 
     </div>

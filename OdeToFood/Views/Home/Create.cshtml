@@ -1,4 +1,5 @@
-﻿@model OdeToFood.Entities.Restaurant
+﻿@using OdeToFood.Entities
+@model Restaurant
 
 <div>
     <h1>Create</h1>
@@ -14,6 +15,7 @@
             </div>
             <div>
                 @Html.LabelFor(m => m.Cuisine)
+                @Html.DropDownListFor(m => m.Cuisine, Html.GetEnumSelectList(typeof(CuisineType)))
             </div>
         }
 

@@ -1,5 +1,8 @@
 ﻿namespace OdeToFood.Entities
 {
+    /// <summary>
+    /// Enum used to hold the types of Cuisine for the restaurant
+    /// </summary>
     public enum CuisineType
     {
          None,

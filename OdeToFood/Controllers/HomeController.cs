@@ -61,7 +61,12 @@ namespace OdeToFood.Controllers
             return View();
         }
 
-        public IActionResult Create()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public IActionResult Create(RestaurantEditViewModel model)
         {
 
         }

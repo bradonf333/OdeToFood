@@ -22,6 +22,10 @@ namespace OdeToFood.Services
 
         // Method that will return only 1 restaurant
         Restaurant Get(int id);
+
+        // Method that returns a restaurant given a "New Restaurant"
+        Restaurant Add(Restaurant newRestaurant);
+
     }
 
     public class InMemoryRestaurantData : IRestaurantData
@@ -58,6 +62,22 @@ namespace OdeToFood.Services
         public Restaurant Get(int id)
         {
             return _restaurants.FirstOrDefault(r => r.Id == id);
+        }
+
+        /// <summary>
+        /// Adds a new restaurant. Computes a new id for the restaurant.
+        /// </summary>
+        /// <param name="newRestaurant"></param>
+        /// <returns></returns>
+        public Restaurant Add(Restaurant newRestaurant)
+        {
+            // Find the max id from the existing restaurants then add 1 and assign it as the new id
+            newRestaurant.Id = _restaurants.Max(r => r.Id) + 1;
+
+            // Add the new restaurant to the list of restaurants
+            _restaurants.Add(newRestaurant);
+
+            return newRestaurant;
         }
 
         // List to hold restaurants

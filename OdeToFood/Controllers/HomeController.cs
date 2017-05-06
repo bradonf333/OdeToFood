@@ -59,12 +59,13 @@ namespace OdeToFood.Controllers
         /// This will be a Get request.
         /// </summary>
         /// <returns></returns>
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
 
-
+        [HttpPost]
         public IActionResult Create(RestaurantEditViewModel model)
         {
             // Instantiate new restaurant that will hold the data from the EditViewModel

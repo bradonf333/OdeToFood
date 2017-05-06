@@ -75,7 +75,7 @@ namespace OdeToFood.Controllers
             newRestaurant.Name = model.Name;
 
             // Add the new restaurant to our list of restaurants.
-            _restaurantData.Add(newRestaurant);
+            newRestaurant = _restaurantData.Add(newRestaurant);
 
             return View("Details", newRestaurant);
         }

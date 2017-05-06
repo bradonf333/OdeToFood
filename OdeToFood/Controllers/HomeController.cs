@@ -77,7 +77,7 @@ namespace OdeToFood.Controllers
             // Add the new restaurant to our list of restaurants.
             _restaurantData.Add(newRestaurant);
 
-            return View("Details");
+            return View("Details", newRestaurant);
         }
     }
 }

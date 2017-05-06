@@ -54,7 +54,9 @@ namespace OdeToFood.Controllers
         }
 
         /// <summary>
-        /// Create a new restaurant
+        /// Display a form to the user that will allow them to enter the data needed 
+        /// to create a new restaurant. 
+        /// This will be a Get request.
         /// </summary>
         /// <returns></returns>
         public IActionResult Create()
@@ -71,6 +73,9 @@ namespace OdeToFood.Controllers
             // Assign the properties
             newRestaurant.Cuisine = model.Cuisine;
             newRestaurant.Name = model.Name;
+
+            // Add the new restaurant to our list of restaurants.
+            _restaurantData.Add(newRestaurant);
         }
     }
 }

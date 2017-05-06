@@ -34,7 +34,7 @@ namespace OdeToFood.Services
         /// Constructor to create 3 Restaurants.
         /// Simulate a database
         /// </summary>
-        public InMemoryRestaurantData()
+        static InMemoryRestaurantData()
         {
             _restaurants = new List<Restaurant>
             {
@@ -81,6 +81,6 @@ namespace OdeToFood.Services
         }
 
         // List to hold restaurants
-        List<Restaurant> _restaurants;
+        static List<Restaurant> _restaurants;
     }
 }

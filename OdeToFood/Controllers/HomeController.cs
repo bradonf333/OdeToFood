@@ -60,5 +60,10 @@ namespace OdeToFood.Controllers
         {
             return View();
         }
+
+        public IActionResult Create()
+        {
+
+        }
     }
 }

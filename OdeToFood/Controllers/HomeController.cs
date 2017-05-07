@@ -78,7 +78,8 @@ namespace OdeToFood.Controllers
             // Add the new restaurant to our list of restaurants.
             newRestaurant = _restaurantData.Add(newRestaurant);
 
-            return View("Details", newRestaurant);
+            // Return the details of the new restaurant as a redirect
+            return RedirectToAction("Details", new { id = newRestaurant.Id });
         }
     }
 }

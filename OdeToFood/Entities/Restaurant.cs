@@ -1,4 +1,6 @@
-﻿namespace OdeToFood.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OdeToFood.Entities
 {
     /// <summary>
     /// Enum used to hold the types of Cuisine for the restaurant
@@ -18,6 +20,9 @@
     public class Restaurant
     {
         public int Id { get; set; }
+
+        // Data annotation to specify UI friendly label
+        [Display(Name="Restaurant Name")]
         public string Name { get; set; }
         public CuisineType Cuisine { get; set; }
     }

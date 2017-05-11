@@ -68,18 +68,26 @@ namespace OdeToFood.Controllers
         [HttpPost]
         public IActionResult Create(RestaurantEditViewModel model)
         {
-            // Instantiate new restaurant that will hold the data from the EditViewModel
-            var newRestaurant = new Restaurant();
+            // Make sure the Model is valid, if not then return back to the Create page
+            if (ModelState.IsValid)
+            {
+                // Instantiate new restaurant that will hold the data from the EditViewModel
+                var newRestaurant = new Restaurant();
 
-            // Assign the properties
-            newRestaurant.Cuisine = model.Cuisine;
-            newRestaurant.Name = model.Name;
+                // Assign the properties
+                newRestaurant.Cuisine = model.Cuisine;
+                newRestaurant.Name = model.Name;
 
-            // Add the new restaurant to our list of restaurants.
-            newRestaurant = _restaurantData.Add(newRestaurant);
+                // Add the new restaurant to our list of restaurants.
+                newRestaurant = _restaurantData.Add(newRestaurant);
 
-            // Return the details of the new restaurant as a redirect
-            return RedirectToAction("Details", new { id = newRestaurant.Id });
+                // Return the details of the new restaurant as a redirect
+                return RedirectToAction("Details", new { id = newRestaurant.Id });
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }

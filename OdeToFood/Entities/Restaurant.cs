@@ -21,7 +21,6 @@ namespace OdeToFood.Entities
     {
         public int Id { get; set; }
 
-        // Data annotation to specify UI friendly label
         [Display(Name="Restaurant Name")]
         public string Name { get; set; }
         public CuisineType Cuisine { get; set; }

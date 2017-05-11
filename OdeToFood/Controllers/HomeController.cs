@@ -66,6 +66,7 @@ namespace OdeToFood.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(RestaurantEditViewModel model)
         {
             // Make sure the Model is valid, if not then return back to the Create page

@@ -53,9 +53,15 @@ namespace OdeToFood.Services
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Return a restaurant from our database by using a Linq query.
+        /// Find the restaurant by the id that was passed in as a param
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Restaurant Get(int id)
         {
-            throw new NotImplementedException();
+            return _context.Restaurants.FirstOrDefault(r => r.Id == id);
         }
 
         /// <summary>

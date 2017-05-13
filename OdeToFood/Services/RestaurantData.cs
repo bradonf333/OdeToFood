@@ -7,13 +7,7 @@ namespace OdeToFood.Services
 {
     /// <summary>
     /// Restaurant Data
-    /// 
-    /// Version 1 
-    /// ==============================================================
-    /// Generate some restaurants by default and add them to a list.
-    /// This will replicate a database and how you would use the data
-    /// from the database. Version 2 will have the database portion.
-    /// ==============================================================
+    /// Interface that is used for adding and viewing restaurants
     /// </summary>
     public interface IRestaurantData
     {
@@ -28,6 +22,14 @@ namespace OdeToFood.Services
 
     }
 
+    /// <summary>
+    /// Version 1 
+    /// ==============================================================
+    /// Generate some restaurants by default and add them to a list.
+    /// This will replicate a database and how you would use the data
+    /// from the database. Version 2 will have the database portion.
+    /// ==============================================================
+    /// </summary>
     public class InMemoryRestaurantData : IRestaurantData
     {
         /// <summary>

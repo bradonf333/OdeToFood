@@ -9,7 +9,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.EntityFrameworkCore;
 using OdeToFood.Services;
+using OdeToFood.Entities;
 
 namespace OdeToFood
 {
@@ -48,7 +50,7 @@ namespace OdeToFood
 
             // Have the builder build itself and assign to the Configuration property
             Configuration = builder.Build();
-        }        
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
@@ -60,7 +62,7 @@ namespace OdeToFood
              * Now whenever Configure is called it will see it needs an IGreeter object.
              * It will then look at that IGreeter class and see that it takes an IConfiguration object,
              * which is now set up here.
-             */ 
+             */
             services.AddSingleton(Configuration);
 
             // Adds the MVC Service
@@ -71,12 +73,15 @@ namespace OdeToFood
 
             // Create a new IRestaurantData for each http request
             services.AddScoped<IRestaurantData, SqlRestaurantData>();
+
+            // Configure the DbContext (Database connection)
+            services.AddDbContext<OdeToFoodDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("OdeToFood")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(
-            IApplicationBuilder app, 
-            IHostingEnvironment env, 
+            IApplicationBuilder app,
+            IHostingEnvironment env,
             ILoggerFactory loggerFactory,
             IGreeter greeter)
         {
@@ -84,7 +89,7 @@ namespace OdeToFood
 
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage(); 
+                app.UseDeveloperExceptionPage();
             }
 
             // Combines both the UseDefaultFiles and the UseStaticFiles
@@ -107,7 +112,7 @@ namespace OdeToFood
              * First param is a name of the route
              * Second param is the template for the route
              * 
-             */ 
+             */
             routeBuilder.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
         }
     }

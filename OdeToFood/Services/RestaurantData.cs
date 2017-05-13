@@ -22,6 +22,18 @@ namespace OdeToFood.Services
 
     }
 
+    /// <summary>
+    /// Version 2
+    /// ==============================================================
+    /// Have our application interact with an SQL Database.
+    /// The DbContext passed in will be our OdeToFood database.
+    /// 
+    /// Abilites:
+    /// 1. Add a new restaurant
+    /// 2. View all restaurants
+    /// 3. View 1 specific restaurant
+    /// ==============================================================
+    /// </summary>
     public class SqlRestaurantData : IRestaurantData
     {
         // Stores the DbContext from the constructor

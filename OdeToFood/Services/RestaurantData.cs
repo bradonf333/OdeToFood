@@ -48,9 +48,18 @@ namespace OdeToFood.Services
             _context = context;
         }
 
+
         public Restaurant Add(Restaurant newRestaurant)
         {
-            throw new NotImplementedException();
+            // Add the newRestaurant to the database.
+            // The context is smart enough to know that this is a restaurant object and it goes in the Restaurants table (DbSet<Restaurant>)
+            _context.Add(newRestaurant);
+
+            // Save the changes made.
+            _context.SaveChanges();
+
+            // Return the newly created restaurant.
+            return newRestaurant;
         }
 
         /// <summary>

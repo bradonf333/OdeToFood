@@ -22,6 +22,20 @@ namespace OdeToFood.Services
 
     }
 
+    public class SqlRestaurantData : IRestaurantData
+    {
+        private OdeToFoodDbContext _context;
+
+        /// <summary>
+        /// Constructor that gets our DbContext (SQL Database) passed in
+        /// </summary>
+        /// <param name="context"></param>
+        public SqlRestaurantData(OdeToFoodDbContext context)
+        {
+            _context = context;
+        }
+    }
+
     /// <summary>
     /// Version 1 
     /// ==============================================================

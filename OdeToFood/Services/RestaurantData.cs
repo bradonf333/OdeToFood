@@ -58,9 +58,14 @@ namespace OdeToFood.Services
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Return our DbSet of Restaurants
+        /// (Return the table of Restaurants)
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Restaurant> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Restaurants;
         }
     }
 

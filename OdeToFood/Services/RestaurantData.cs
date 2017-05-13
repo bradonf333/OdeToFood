@@ -24,6 +24,7 @@ namespace OdeToFood.Services
 
     public class SqlRestaurantData : IRestaurantData
     {
+        // Stores the DbContext from the constructor
         private OdeToFoodDbContext _context;
 
         /// <summary>
@@ -33,6 +34,21 @@ namespace OdeToFood.Services
         public SqlRestaurantData(OdeToFoodDbContext context)
         {
             _context = context;
+        }
+
+        public Restaurant Add(Restaurant newRestaurant)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Restaurant Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Restaurant> GetAll()
+        {
+            throw new NotImplementedException();
         }
     }
 

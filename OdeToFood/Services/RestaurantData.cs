@@ -48,7 +48,6 @@ namespace OdeToFood.Services
             _context = context;
         }
 
-
         public Restaurant Add(Restaurant newRestaurant)
         {
             // Add the newRestaurant to the database.

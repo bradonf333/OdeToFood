@@ -9,5 +9,9 @@
     <div>
         @RenderBody()
     </div>
+    <footer>
+        @RenderSection("footer", required: false)
+        @DateTime.Now.Year
+    </footer>
 </body>
 </html>

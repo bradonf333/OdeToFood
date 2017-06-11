@@ -11,13 +11,14 @@
     {
         <tr>
             <td>
-                <a href="/home/details/@restaurant.Id">Details</a>
-                @Html.ActionLink("View", "Details", new { id = restaurant.Id })
+                <a >Detail</a>
             </td>
             <td>@restaurant.Name</td>
         </tr>
     }
 </table>
+
+<a asp-action="Create">Create</a>
 
 @section footer {
     <h3>@Model.CurrentMessage</h3>

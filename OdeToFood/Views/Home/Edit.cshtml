@@ -5,27 +5,25 @@
 }
 
 <div>
-    <h1>Create</h1>
+    <h1>Editing: @Model.Name</h1>
 
     <div>
 
-        @* Html form helper. Opens and closes form *@
-        @using (Html.BeginForm())
-        {
+        <form action="" method="post" asp-antiforgery="true">
             <div>
-                @Html.LabelFor(m => m.Name)
-                @Html.TextBoxFor(m => m.Name)
-                @Html.ValidationMessageFor(m => m.Name)
+                <label asp-for="Name"></label>
+                <input asp-for="Name"/>
+                <span asp-validation-for="Name"></span>
             </div>
             <div>
-                @Html.LabelFor(m => m.Cuisine)
-                @Html.DropDownListFor(m => m.Cuisine, Html.GetEnumSelectList(typeof(CuisineType)))
-                @Html.ValidationMessageFor(m => m.Cuisine )
+                <label asp-for="Cuisine"></label>
+                <select asp-for="Cuisine" asp-items="@Html.GetEnumSelectList(typeof(CuisineType))"></select>
+                <span asp-validation-for="Cuisine"></span>
             </div>
             <div>
-                <input type="submit" value="Save"/>
+                <input type="submit" value="Save" />
             </div>
-        }
+        </form>
 
     </div>
 

@@ -54,6 +54,25 @@ namespace OdeToFood.Controllers
         }
 
         /// <summary>
+        /// Lets the user Edit 1 restaurant by the restaurant id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var model = _restaurantData.Get(id);
+
+            // Handle null ids. Redirect to our index page
+            if(model == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
+        }
+
+        /// <summary>
         /// Display a form to the user that will allow them to enter the data needed 
         /// to create a new restaurant. 
         /// This will be a Get request.

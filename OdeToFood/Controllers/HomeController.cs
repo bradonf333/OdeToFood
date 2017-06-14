@@ -83,8 +83,15 @@ namespace OdeToFood.Controllers
             // Check to make sure the model is valid
             if (ModelState.IsValid)
             {
+                // Assign the new properties to the existing restaurant
                 restaurant.Cuisine = model.Cuisine;
                 restaurant.Name = model.Name;
+
+                // Save the changes
+                _restaurantData.Commit();
+
+                // Return the user to the Details page passing in the Id so that they can see new changes.
+                return RedirectToAction("Details", new { id = restaurant.Id });
             }
             return View(restaurant);
         }

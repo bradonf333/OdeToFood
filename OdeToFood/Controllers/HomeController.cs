@@ -72,6 +72,23 @@ namespace OdeToFood.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id, RestaurantEditViewModel model)
+        {
+            // Instantiant a new restaurant object by finding a current restaurant
+            // Finds the current restaurant by the given restaurant id
+            var restaurant = _restaurantData.Get(id);
+
+            // Check to make sure the model is valid
+            if (ModelState.IsValid)
+            {
+                restaurant.Cuisine = model.Cuisine;
+                restaurant.Name = model.Name;
+            }
+            return View(restaurant);
+        }
+
         /// <summary>
         /// Display a form to the user that will allow them to enter the data needed 
         /// to create a new restaurant. 

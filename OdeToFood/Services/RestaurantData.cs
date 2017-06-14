@@ -51,6 +51,11 @@ namespace OdeToFood.Services
             _context = context;
         }
 
+        /// <summary>
+        /// Adds a new Restaurant object to the database
+        /// </summary>
+        /// <param name="newRestaurant"></param>
+        /// <returns></returns>
         public Restaurant Add(Restaurant newRestaurant)
         {
             // Add the newRestaurant to the database.
@@ -149,6 +154,11 @@ namespace OdeToFood.Services
             _restaurants.Add(newRestaurant);
 
             return newRestaurant;
+        }
+
+        public void Commit()
+        {
+            // ...no op
         }
 
         // List to hold restaurants

@@ -20,6 +20,9 @@ namespace OdeToFood.Services
         // Method that returns a restaurant given a "New Restaurant"
         Restaurant Add(Restaurant newRestaurant);
 
+        // Method that will call Save Changes so that we can save any changes made to the Database
+        void Commit();
+
     }
 
     /// <summary>
@@ -54,11 +57,16 @@ namespace OdeToFood.Services
             // The context is smart enough to know that this is a restaurant object and it goes in the Restaurants table (DbSet<Restaurant>)
             _context.Add(newRestaurant);
 
-            // Save the changes made.
-            _context.SaveChanges();
-
             // Return the newly created restaurant.
             return newRestaurant;
+        }
+
+        /// <summary>
+        /// Method that can be called to save any changes made to the database
+        /// </summary>
+        public void Commit()
+        {
+            _context.SaveChanges();
         }
 
         /// <summary>

@@ -118,6 +118,9 @@ namespace OdeToFood.Controllers
                 // Add the new restaurant to our list of restaurants.
                 newRestaurant = _restaurantData.Add(newRestaurant);
 
+                // Commit the changes to the database (SaveChanges to the DbContext)
+                _restaurantData.Commit();
+
                 // Return the details of the new restaurant as a redirect
                 return RedirectToAction("Details", new { id = newRestaurant.Id });
             }

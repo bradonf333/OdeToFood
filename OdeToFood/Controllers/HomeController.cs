@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OdeToFood.Entities;
 using OdeToFood.Services;
 using OdeToFood.ViewModels;
 
 namespace OdeToFood.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private IRestaurantData _restaurantData;
@@ -25,6 +27,7 @@ namespace OdeToFood.Controllers
         /// Creates a model from the HomePageViewModel and assigns it the list of restaurants and the greeting string
         /// </summary>
         /// <returns></returns>
+        [AllowAnonymous]
         public IActionResult Index()
         {
             // Instantiate a new Restaurant object and add populate with data

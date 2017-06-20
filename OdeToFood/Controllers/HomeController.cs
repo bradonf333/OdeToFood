@@ -24,7 +24,8 @@ namespace OdeToFood.Controllers
         }
 
         /// <summary>
-        /// Creates a model from the HomePageViewModel and assigns it the list of restaurants and the greeting string
+        /// Creates a model from the HomePageViewModel and assigns it the list of restaurants and the greeting string.
+        /// Overrides the Authorize attribute on this HomeController so that any user can see this page.
         /// </summary>
         /// <returns></returns>
         [AllowAnonymous]

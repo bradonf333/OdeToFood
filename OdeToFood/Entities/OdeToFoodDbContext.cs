@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace OdeToFood.Entities
 {
-    public class OdeToFoodDbContext : IdentityDbContext
+    public class OdeToFoodDbContext : IdentityDbContext<User>
     {
         // Constructor that passes the DbContext options to the base class
         public OdeToFoodDbContext(DbContextOptions options) : base(options)

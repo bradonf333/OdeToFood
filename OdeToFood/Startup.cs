@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using OdeToFood.Services;
 using OdeToFood.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace OdeToFood
 {
@@ -76,6 +77,15 @@ namespace OdeToFood
 
             // Configure the DbContext (Database connection)
             services.AddDbContext<OdeToFoodDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("OdeToFood")));
+
+            /* 
+             * Configure the Identity Services
+             * AddIdentity - Specifies the type of user and the role
+             * AddEntityFrameworkStores - Tells the Identity how/where we are storing the data.
+             *                            Just using our DbContext class.
+             */
+            services.AddIdentity<User, IdentityRole>()
+                    .AddEntityFrameworkStores<OdeToFoodDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -3,6 +3,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace OdeToFood.Entities
 {
+    /// <summary>
+    /// Inherit from the IdentityDbContext and specify the User class so that we can use the Identity Framework
+    /// pre-built stuff to store the users information
+    /// </summary>
     public class OdeToFoodDbContext : IdentityDbContext<User>
     {
         // Constructor that passes the DbContext options to the base class

@@ -7,7 +7,7 @@ namespace OdeToFood.Controllers
         [HttpGet]
         public IActionResult Register()
         {
-
+            return View();
         }
     }
 }

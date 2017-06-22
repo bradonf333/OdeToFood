@@ -9,5 +9,11 @@ namespace OdeToFood.Controllers
         {
             return View();
         }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Register()
+        {
+            
+        }
     }
 }

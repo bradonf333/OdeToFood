@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OdeToFood.ViewModels;
 
 namespace OdeToFood.Controllers
 {
@@ -11,7 +12,7 @@ namespace OdeToFood.Controllers
         }
 
         [HttpPost, ValidateAntiForgeryToken]
-        public IActionResult Register()
+        public IActionResult Register(RegisterUserViewModel model)
         {
             
         }

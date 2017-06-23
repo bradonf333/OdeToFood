@@ -14,7 +14,11 @@ namespace OdeToFood.Controllers
         [HttpPost, ValidateAntiForgeryToken]
         public IActionResult Register(RegisterUserViewModel model)
         {
-            
+            if(ModelState.IsValid)
+            {
+
+            }
+            return View();
         }
     }
 }

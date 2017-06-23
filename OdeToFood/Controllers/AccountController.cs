@@ -1,14 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using OdeToFood.Entities;
 using OdeToFood.ViewModels;
 
 namespace OdeToFood.Controllers
 {
     public class AccountController : Controller
     {
-        // Constructor to bring in Identity Framework services
-        public AccountController()
-        {
+        private SignInManager<User> _signInManager;
+        private UserManager<User> _userManager;
 
+        /// <summary>
+        /// Constructor to bring in Identity Framework services needed for handeling users
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="signInManager"></param>
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         [HttpGet]

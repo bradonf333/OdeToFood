@@ -5,6 +5,12 @@ namespace OdeToFood.Controllers
 {
     public class AccountController : Controller
     {
+        // Constructor to bring in Identity Framework services
+        public AccountController()
+        {
+
+        }
+
         [HttpGet]
         public IActionResult Register()
         {
@@ -16,7 +22,7 @@ namespace OdeToFood.Controllers
         {
             if(ModelState.IsValid)
             {
-
+                // ... Create a user
             }
             return View();
         }

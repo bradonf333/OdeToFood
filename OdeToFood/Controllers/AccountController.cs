@@ -35,10 +35,15 @@ namespace OdeToFood.Controllers
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterUserViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                // ... Create a user
-               await _userManager.CreateAsync()
+                // Instantiate a User property and assign the Username
+                var user = new User { UserName = model.Username };
+
+                // Create the user on the database, passing in our User object from above,
+                // and passing the Password from the model directly to the database.
+                // Store in a variable called createResult.
+                var createResult = await _userManager.CreateAsync(user, model.Password);
             }
             return View();
         }

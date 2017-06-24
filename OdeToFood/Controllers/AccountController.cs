@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using OdeToFood.Entities;
 using OdeToFood.ViewModels;
+using System.Threading.Tasks;
 
 namespace OdeToFood.Controllers
 {
@@ -21,6 +22,10 @@ namespace OdeToFood.Controllers
             _signInManager = signInManager;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Register()
         {
@@ -28,11 +33,12 @@ namespace OdeToFood.Controllers
         }
 
         [HttpPost, ValidateAntiForgeryToken]
-        public IActionResult Register(RegisterUserViewModel model)
+        public async Task<IActionResult> Register(RegisterUserViewModel model)
         {
             if(ModelState.IsValid)
             {
                 // ... Create a user
+               await _userManager.CreateAsync()
             }
             return View();
         }

@@ -44,6 +44,11 @@ namespace OdeToFood.Controllers
                 // and passing the Password from the model directly to the database.
                 // Store in a variable called createResult.
                 var createResult = await _userManager.CreateAsync(user, model.Password);
+
+                if(createResult.Succeeded)
+                {
+                    // .. Sign in the User
+                }
             }
             return View();
         }

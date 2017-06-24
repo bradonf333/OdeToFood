@@ -46,12 +46,21 @@ namespace OdeToFood.Controllers
                 var createResult = await _userManager.CreateAsync(user, model.Password);
 
                 // Make sure that the user is successfully created,
-                // if so sign them in and redirect to the Home controller
+                // if so sign them in and redirect to the Home controller.
+                // If false, add the error to the ModelState so they will show on the
+                // RegisterView
                 if(createResult.Succeeded)
                 {
                     // .. Sign in the User
                     await _signInManager.SignInAsync(user, false);
                     return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    foreach (var error in createResult.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
                 }
             }
             return View();

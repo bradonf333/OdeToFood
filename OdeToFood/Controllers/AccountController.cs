@@ -23,7 +23,7 @@ namespace OdeToFood.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Get request to show the RegisterUser View for registering new users
         /// </summary>
         /// <returns></returns>
         [HttpGet]

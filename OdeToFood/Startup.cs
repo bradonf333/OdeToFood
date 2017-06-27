@@ -113,7 +113,7 @@ namespace OdeToFood
             app.UseMvc(ConfigureRoutes);
 
             // Custom method that serves files from the node_modules folder
-            app.UseNodeModules();
+            app.UseNodeModules(env.ContentRootPath);
 
             app.Run(ctx => ctx.Response.WriteAsync("URL Not Found"));
         }

@@ -9,7 +9,7 @@ namespace OdeToFood.Middleware
 {
     public static class ApplicationBuilderExtensions
     {
-        public static IApplicationBuilder UseNodeModules()
+        public static IApplicationBuilder UseNodeModules(this IApplicationBuilder app)
         {
 
         }

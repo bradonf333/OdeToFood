@@ -112,6 +112,9 @@ namespace OdeToFood
             // Instantiate a class, invoke a method and that method will tell MVC Framework what to do.
             app.UseMvc(ConfigureRoutes);
 
+            // Custom method that serves files from the node_modules folder
+            app.UseNodeModules();
+
             app.Run(ctx => ctx.Response.WriteAsync("URL Not Found"));
         }
 

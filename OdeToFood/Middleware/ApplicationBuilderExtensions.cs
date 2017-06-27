@@ -29,7 +29,7 @@ namespace Microsoft.AspNetCore.Builder
             // Where to look for the files
             options.FileProvider = provider;
 
-            app.UseStaticFiles();
+            app.UseStaticFiles(options);
             return app;
         }
     }

@@ -66,6 +66,10 @@ namespace OdeToFood.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Log the User out and redirect them to the Index action on the Home Controller (home page)
+        /// </summary>
+        /// <returns></returns>
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {

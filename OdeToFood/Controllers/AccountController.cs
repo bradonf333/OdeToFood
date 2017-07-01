@@ -87,5 +87,34 @@ namespace OdeToFood.Controllers
             return View();
         }
 
+        [HttpPost, ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            // Make sure model is valid
+            if(ModelState.IsValid)
+            {
+                // Store the results of the Sign in
+                var loginResult = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, false);
+
+                // Check if sign in was successfull or not
+                if(loginResult.Succeeded)
+                {
+                    // Make sure we redirect to a local url or return to home page
+                    if(Url.IsLocalUrl(model.ReturnUrl))
+                    {
+                        return Redirect(model.ReturnUrl);
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
+            }
+
+            // If ModelState is not valid return an error and send user back to the original View page (login page)
+            ModelState.AddModelError("", "Could not Login");
+            return View(model);
+        }
+
     }
 }

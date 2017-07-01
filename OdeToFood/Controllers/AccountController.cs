@@ -77,5 +77,15 @@ namespace OdeToFood.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        /// <summary>
+        /// Get request to show the Login page for existing users to sign in
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
     }
 }

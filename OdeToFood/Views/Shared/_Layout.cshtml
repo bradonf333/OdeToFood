@@ -17,12 +17,13 @@
             </div> 
         </div>
     </nav>
-    <div>
+    <div class="container-fluid">
         @RenderBody()
+        <footer>
+            @RenderSection("footer", required: false)
+            @await Component.InvokeAsync("Greeting")
+        </footer>
     </div>
-    <footer>
-        @RenderSection("footer", required: false)
-        @await Component.InvokeAsync("Greeting")
-    </footer>
+    
 </body>
 </html>

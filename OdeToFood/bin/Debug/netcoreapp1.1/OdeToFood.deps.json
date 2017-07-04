@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "0223cbcde366b5d7c8d650efbc30b95b90b2f88b"
+    "signature": "5ac112f62d49bdf697231a2d5ebbfc029476b95f"
   },
   "compilationOptions": {
     "defines": [
@@ -33,13 +33,21 @@
           "Microsoft.Extensions.Configuration.Json": "1.1.2",
           "Microsoft.NETCore.App": "1.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
-          "Microsoft.EntityFrameworkCore.Tools": "1.1.1"
+          "Microsoft.EntityFrameworkCore.Tools": "1.1.1",
+          "jQuery": "3.1.1",
+          "jQuery.Validation": "1.16.0"
         },
         "runtime": {
           "OdeToFood.dll": {}
         },
         "compile": {
           "OdeToFood.dll": {}
+        }
+      },
+      "jquery/3.1.1": {},
+      "jquery.validation/1.16.0": {
+        "dependencies": {
+          "jQuery": "3.1.1"
         }
       },
       "microsoft.applicationinsights/2.2.0": {
@@ -3306,6 +3314,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "jquery/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XGsgwse025NxNPHjY7GE8HMFNzjqsa7a/PmNS1S5bVU++pNpZmiTnzUBK6OmECnqG/fIMVaAYHTnfoYd/Wz28g==",
+      "path": "jquery/3.1.1",
+      "hashPath": "jquery.3.1.1.nupkg.sha512"
+    },
+    "jquery.validation/1.16.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5vvz+cw3ykW15RmXoc6GzSKndb1Se38u4cJ3cqEvZxmInf/9NwvOxu2EUYdK2mCsdDsvGn2m9HA7s9NOrr8Wdw==",
+      "path": "jquery.validation/1.16.0",
+      "hashPath": "jquery.validation.1.16.0.nupkg.sha512"
     },
     "microsoft.applicationinsights/2.2.0": {
       "type": "package",

@@ -1,0 +1,9 @@
+C:\Sites\OdeToFood\OdeToFood\bin\Release\netcoreapp1.1\OdeToFood.deps.json
+C:\Sites\OdeToFood\OdeToFood\bin\Release\netcoreapp1.1\OdeToFood.runtimeconfig.json
+C:\Sites\OdeToFood\OdeToFood\bin\Release\netcoreapp1.1\OdeToFood.runtimeconfig.dev.json
+C:\Sites\OdeToFood\OdeToFood\bin\Release\netcoreapp1.1\OdeToFood.dll
+C:\Sites\OdeToFood\OdeToFood\bin\Release\netcoreapp1.1\OdeToFood.pdb
+C:\Sites\OdeToFood\OdeToFood\obj\Release\netcoreapp1.1\OdeToFood.csprojResolveAssemblyReference.cache
+C:\Sites\OdeToFood\OdeToFood\obj\Release\netcoreapp1.1\OdeToFood.AssemblyInfo.cs
+C:\Sites\OdeToFood\OdeToFood\obj\Release\netcoreapp1.1\OdeToFood.dll
+C:\Sites\OdeToFood\OdeToFood\obj\Release\netcoreapp1.1\OdeToFood.pdb

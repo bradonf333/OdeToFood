@@ -36,9 +36,11 @@ Demonstrates the ability to edit an object and store those changes in the databa
 
 ---
 
-**Main Index Page**
+**Creat New Object**
 
-![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "SinglePageSite Demo")
+Can create a new object and store that new object in the database
+
+![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/CreateNewObject.gif?raw=true "Create Object")
 
 **Main Index Page**
 

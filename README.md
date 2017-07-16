@@ -26,11 +26,11 @@ A Login is required in order to access these pages
 
 ---
 
-**Incorrect Password**
+**Login User**
 
-Shows the functionality to handle errors when password is incorrect
+Shows the functionality to handle errors when password is incorrect. Also shows the Login function when password is correct.
 
-![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/IncorrectPwdCorrectPwd.gif?raw=true "Password Incorrect")
+![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/LoginFail_Success.gif "Login")
 
 ---
 
@@ -38,11 +38,11 @@ Shows the functionality to handle errors when password is incorrect
 
 Demonstrates the ability to edit an object and store those changes in the database
 
-![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/EditObjectStoreDatabase.gif?raw=true "Edit Object")
+![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/EditAndSave.gif "Edit Object")
 
 ---
 
-**Creat New Object**
+**Create New Object**
 
 Can create a new object and store that new object in the database
 

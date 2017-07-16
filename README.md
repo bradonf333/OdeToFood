@@ -7,4 +7,4 @@ Give the ability for the user to login and edit data in the restaurant objects w
 
 ## Demos
 **Main Index Page**
-![alt text](https://github.com/bradonf333/OdeToFood/tree/master/DemoGifs/MainPage.gif "SinglePageSite Demo")
+![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "SinglePageSite Demo")

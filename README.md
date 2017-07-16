@@ -14,7 +14,7 @@ Some of the gifs got cut too short. Need to re-create them. Finish uploading the
 ## Demos
 **Main Index Page**
 
-![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "Main Index")
+![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif "Main Index")
 
 ---
 
@@ -22,7 +22,7 @@ Some of the gifs got cut too short. Need to re-create them. Finish uploading the
 
 A Login is required in order to access these pages
 
-![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/LoginRequired.gif?raw=truee "Login Required")
+![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/LoginRequired.gif "Login Required")
 
 ---
 

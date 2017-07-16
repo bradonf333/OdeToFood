@@ -9,6 +9,7 @@ Give the ability for the user to login and edit data in the restaurant objects w
 **Main Index Page**
 
 ![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "Main Index")
+
 ---
 
 **Login Required**
@@ -16,6 +17,7 @@ Give the ability for the user to login and edit data in the restaurant objects w
 A Login is required in order to access these pages
 
 ![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/LoginRequired.gif?raw=truee "Login Required")
+
 ---
 
 **Incorrect Password**
@@ -24,9 +26,15 @@ Shows the functionality to handle errors when password is incorrect
 
 ![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "Password Incorrect")
 
-**Main Index Page**
+---
+
+**Edit an object**
+
+Demonstrates the ability to edit an object and store those changes in the database
 
 ![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "SinglePageSite Demo")
+
+---
 
 **Main Index Page**
 

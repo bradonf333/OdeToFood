@@ -24,7 +24,7 @@ A Login is required in order to access these pages
 
 Shows the functionality to handle errors when password is incorrect
 
-![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "Password Incorrect")
+![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/IncorrectPwdCorrectPwd.gif?raw=true "Password Incorrect")
 
 ---
 
@@ -32,7 +32,7 @@ Shows the functionality to handle errors when password is incorrect
 
 Demonstrates the ability to edit an object and store those changes in the database
 
-![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "SinglePageSite Demo")
+![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/EditObjectStoreDatabase.gif?raw=true "Edit Object")
 
 ---
 

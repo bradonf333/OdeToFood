@@ -5,6 +5,12 @@ This demonstrates an ASP.NET Core web app using MVC and Entity Framework.
 It stores basic data for restaurants in a local database.
 Give the ability for the user to login and edit data in the restaurant objects which in turn stores the info in the database.
 
+## TODO
+
+Some of the gifs got cut too short. Need to re-create them. Finish uploading the rest later.
+
+---
+
 ## Demos
 **Main Index Page**
 
@@ -42,10 +48,4 @@ Can create a new object and store that new object in the database
 
 ![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/CreateNewObject.gif?raw=true "Create Object")
 
-**Main Index Page**
-
-![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "SinglePageSite Demo")
-
-**Main Index Page**
-
-![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "SinglePageSite Demo")
+---

@@ -9,12 +9,14 @@ Give the ability for the user to login and edit data in the restaurant objects w
 **Main Index Page**
 
 ![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/MainPage.gif?raw=true "Main Index")
+---
 
 **Login Required**
 
 A Login is required in order to access these pages
 
 ![alt text](https://github.com/bradonf333/OdeToFood/blob/master/DemoGifs/LoginRequired.gif?raw=truee "Login Required")
+---
 
 **Incorrect Password**
 
